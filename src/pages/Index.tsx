@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import GaleriaEventoSection from "../components/GaleriaEventoSection";
+import SobreSalaoSection from "../components/SobreSalaoSection";
 import DepoimentosSection from "../components/DepoimentosSection";
 import PorqueSection from "../components/PorqueSection";
 import CTAFinal from "../components/CTAFinal";
@@ -16,6 +17,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <GaleriaEventoSection />
+      <SobreSalaoSection />
       <DepoimentosSection />
       <PorqueSection />
       <CTAFinal />

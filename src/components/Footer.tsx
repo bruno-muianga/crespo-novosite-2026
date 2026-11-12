@@ -15,7 +15,7 @@ const Footer = () => (
           </div>
           <div>
             <h4 className="font-body font-bold text-background text-xs sm:text-sm mb-1">Matola</h4>
-            <a href="https://wa.me/258834883700" className="font-body text-[10px] sm:text-xs text-background/60 hover:text-background block mb-1">+258 83 488 3700</a>
+            <a href="https://wa.me/258853710487" className="font-body text-[10px] sm:text-xs text-background/60 hover:text-background block mb-1">+258 85 371 0487</a>
             <p className="font-body text-[9px] sm:text-[10px] text-background/40 leading-relaxed">EN4, Ceres, semáforos da Shoprite — Centro Comercial, 1° Andar nr 9</p>
           </div>
           <div>

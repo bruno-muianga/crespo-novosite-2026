@@ -20,8 +20,8 @@ const locations = [
   {
     name: "Matola",
     badge: "Centro Comercial",
-    phone: "+258 83 488 3700",
-    wa: "https://wa.me/258834883700?text=Olá!%20Quero%20agendar%20na%20Matola%20no%20Crespo%20Cresce",
+    phone: "+258 85 371 0487",
+    wa: "https://wa.me/258853710487?text=Olá!%20Quero%20agendar%20na%20Matola%20no%20Crespo%20Cresce",
     address: "EN4, Ceres, semáforos da Shoprite em frente à Construa (1° Andar, nr 9)",
   },
 ];

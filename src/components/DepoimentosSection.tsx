@@ -30,7 +30,7 @@ const DepoimentosSection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 fade-in-section">
         <div className="text-center mb-10 sm:mb-16">
           <span className="inline-block font-body text-xs sm:text-sm font-bold tracking-widest text-brand-gold uppercase mb-2 sm:mb-3">
-            Resultados Comprovados
+            Casos Reais & Transformações
           </span>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 sm:mb-4">
             Transformações Reais
@@ -74,7 +74,7 @@ const DepoimentosSection = () => {
         {/* WhatsApp Consultation Callout */}
         <div className="mt-12 sm:mt-16 text-center">
           <a
-            href="https://wa.me/258835883700?text=Olá!%20Gostaria%20de%20marcar%20uma%20avaliação%20para%20o%20meu%20cabelo%20no%20Crespo%20Cresce"
+            href="https://wa.me/258853710487?text=Olá!%20Gostaria%20de%20marcar%20uma%20avaliação%20para%20o%20meu%20cabelo%20no%20Crespo%20Cresce"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 bg-brand-green text-primary-foreground px-7 sm:px-9 py-3.5 sm:py-4 rounded-full font-body font-bold text-sm sm:text-base hover:brightness-110 shadow-lg transition-all hover:scale-105"

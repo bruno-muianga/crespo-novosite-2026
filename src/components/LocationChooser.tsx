@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react";
 
 const locations = [
   { name: "Maputo", wa: "258835883700" },
-  { name: "Matola", wa: "258834883700" },
+  { name: "Matola", wa: "258853710487" },
   { name: "Sommershield", wa: "258844631159" },
 ];
 

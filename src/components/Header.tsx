@@ -20,12 +20,16 @@ const Header = () => {
   }, []);
 
   const links = [
-    { label: "Evento", href: "#evento" },
-    { label: "Fotos da 1ª Edição", href: "#galeria" },
-    { label: "Resultados", href: "#depoimentos" },
-    { label: "Porquê Escolher", href: "#porque" },
-    { label: "Contacto", href: "#contacto" },
+    { label: "Eventos", href: "#evento" },
+    { label: "1ª Edição Evento Criança Crespa", href: "#galeria" },
+    { label: "Sobre o Salão", href: "#sobre-salao" },
+    { label: "Casos reais", href: "#depoimentos" },
+    { label: "Porquê Escolher Crespo Cresce", href: "#porque" },
+    { label: "Contactos do Crespo Cresce", href: "#contacto" },
   ];
+
+  const whatsappMatolaLink =
+    "https://wa.me/258853710487?text=Olá!%20Gostaria%20de%20agendar%20no%20Crespo%20Cresce";
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-card/95 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
@@ -34,16 +38,16 @@ const Header = () => {
           <LogoSVG size="small" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden xl:flex items-center gap-6">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className={`font-body text-sm font-medium transition-colors hover:text-brand-green ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
+            <a key={l.href} href={l.href} className={`font-body text-xs sm:text-sm font-medium transition-colors hover:text-brand-green ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
               {l.label}
             </a>
           ))}
         </nav>
 
         <a
-          href="https://wa.me/258835883700?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20Crespo%20Cresce"
+          href={whatsappMatolaLink}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-brand-green text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold font-body hover:brightness-110 transition-all"
@@ -53,7 +57,7 @@ const Header = () => {
         </a>
 
         <button
-          className={`md:hidden p-2 -mr-2 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
+          className={`xl:hidden p-2 -mr-2 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >
@@ -68,14 +72,14 @@ const Header = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-card/95 backdrop-blur-md border-t border-border px-5 py-4 space-y-1 animate-in slide-in-from-top-2 duration-200">
+        <div className="xl:hidden bg-card/95 backdrop-blur-md border-t border-border px-5 py-4 space-y-1 animate-in slide-in-from-top-2 duration-200">
           {links.map((l) => (
             <a key={l.href} href={l.href} className="block font-body text-base font-medium text-foreground py-3 border-b border-border/50 last:border-0" onClick={() => setMobileOpen(false)}>
               {l.label}
             </a>
           ))}
           <a
-            href="https://wa.me/258835883700?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20Crespo%20Cresce"
+            href={whatsappMatolaLink}
             target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2 bg-brand-green text-primary-foreground px-5 py-3 rounded-full text-sm font-semibold font-body justify-center mt-3"
           >
