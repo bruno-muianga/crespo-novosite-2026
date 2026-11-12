@@ -109,22 +109,48 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Locations subtitle */}
-        <div className="mt-4 sm:mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-[11px] sm:text-xs text-brand-cream/70 font-body">
-          <span className="font-semibold text-brand-gold">
-            Salões Crespo Cresce:
+        {/* Informação breve sobre o Centro de Terapia Capilar Crespo Cresce */}
+        <div className="mt-8 sm:mt-10 w-full max-w-xl mx-auto p-5 sm:p-7 rounded-2xl bg-primary-foreground/5 border border-brand-gold/25 backdrop-blur-sm text-center">
+          <span className="inline-block text-[11px] sm:text-xs font-body font-bold text-brand-gold tracking-widest uppercase mb-1.5">
+            Centro de Terapia Capilar
           </span>
-          <span>Sommershield</span>
-          <span>•</span>
-          <span>Maputo</span>
-          <span>•</span>
-          <span>Matola</span>
+          <h3 className="font-display text-xl sm:text-2xl font-bold text-primary-foreground mb-2 sm:mb-3">
+            Crespo Cresce
+          </h3>
+          <p className="font-body text-xs sm:text-sm text-brand-cream/85 leading-relaxed mb-5 max-w-lg mx-auto">
+            Especializado no cuidado do cabelo crespo, tratamento para crescimento capilar, recuperação de queda capilar e controle de caspa.
+          </p>
+
+          {/* Botão Saber Mais */}
+          <div className="flex justify-center mb-5">
+            <a
+              href="#porque"
+              className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-body font-semibold text-xs sm:text-sm bg-brand-gold/15 hover:bg-brand-gold text-brand-gold hover:text-brand-black border border-brand-gold/40 hover:border-brand-gold transition-all duration-300 shadow-md active:scale-95"
+            >
+              Saber Mais ↓
+            </a>
+          </div>
+
+          {/* As 3 Localizações por baixo do botão */}
+          <div className="pt-4 border-t border-brand-gold/15 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-body text-brand-cream/80">
+            <span className="flex items-center gap-1.5 font-medium hover:text-brand-gold transition-colors">
+              <MapPin className="w-3.5 h-3.5 text-brand-gold" /> Sommershield
+            </span>
+            <span className="text-brand-gold/40">•</span>
+            <span className="flex items-center gap-1.5 font-medium hover:text-brand-gold transition-colors">
+              <MapPin className="w-3.5 h-3.5 text-brand-gold" /> Maputo
+            </span>
+            <span className="text-brand-gold/40">•</span>
+            <span className="flex items-center gap-1.5 font-medium hover:text-brand-gold transition-colors">
+              <MapPin className="w-3.5 h-3.5 text-brand-gold" /> Matola
+            </span>
+          </div>
         </div>
 
         {/* Smooth scroll down indicator */}
         <a
           href="#galeria"
-          className="mt-5 sm:mt-7 text-brand-cream/40 hover:text-brand-cream transition-colors"
+          className="mt-6 sm:mt-8 text-brand-cream/40 hover:text-brand-cream transition-colors"
           aria-label="Rolar para fotos da galeria"
         >
           <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5 animate-bounce-arrow" />
