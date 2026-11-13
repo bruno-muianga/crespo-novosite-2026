@@ -4,25 +4,25 @@ import WhatsAppIcon from "./WhatsAppIcon";
 
 const locations = [
   {
-    name: "Sommershield",
-    badge: "Espaço do Evento",
-    phone: "+258 84 463 1159",
-    wa: "https://wa.me/258844631159?text=Olá!%20Quero%20agendar%20na%20Sommershield%20no%20Crespo%20Cresce",
-    address: "Edifício Kosmoz — Av. Elias Lucas Kumato (próximo à Fundação Armando Emílio Guebuza)",
+    name: "Matola",
+    badge: "Sede",
+    phone: "+258 85 371 0487",
+    wa: "https://wa.me/258853710487?text=Olá!%20Quero%20agendar%20na%20Matola%20(Sede)%20no%20Crespo%20Cresce",
+    address: "EN4, Ceres, semáforos da Shoprite em frente à Construa (1° Andar, nr 9)",
   },
   {
     name: "Maputo Cidade",
-    badge: "Sede",
+    badge: "Salão",
     phone: "+258 83 588 3700",
     wa: "https://wa.me/258835883700?text=Olá!%20Quero%20agendar%20em%20Maputo%20no%20Crespo%20Cresce",
     address: "Av. Josina Machel esq. c/ Av. Karl Marx, junto ao ginásio IR Fitness",
   },
   {
-    name: "Matola",
-    badge: "Centro Comercial",
-    phone: "+258 85 371 0487",
-    wa: "https://wa.me/258853710487?text=Olá!%20Quero%20agendar%20na%20Matola%20no%20Crespo%20Cresce",
-    address: "EN4, Ceres, semáforos da Shoprite em frente à Construa (1° Andar, nr 9)",
+    name: "Sommershield",
+    badge: "Espaço do Evento",
+    phone: "+258 84 463 1159",
+    wa: "https://wa.me/258844631159?text=Olá!%20Quero%20agendar%20na%20Sommershield%20no%20Crespo%20Cresce",
+    address: "Edifício Kosmoz — Av. Elias Lucas Kumato (próximo à Fundação Armando Emílio Guebuza)",
   },
 ];
 

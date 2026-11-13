@@ -2,8 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import { MapPin } from "lucide-react";
 
 const locations = [
+  { name: "Matola (Sede)", wa: "258853710487" },
   { name: "Maputo", wa: "258835883700" },
-  { name: "Matola", wa: "258853710487" },
   { name: "Sommershield", wa: "258844631159" },
 ];
 

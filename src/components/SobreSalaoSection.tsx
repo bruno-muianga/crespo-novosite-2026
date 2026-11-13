@@ -100,7 +100,7 @@ const SobreSalaoSection = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0" />
-                  <strong>Matola:</strong> EN4, Ceres (Shoprite)
+                  <strong>Matola (Sede):</strong> EN4, Ceres (Shoprite)
                 </li>
               </ul>
             </div>

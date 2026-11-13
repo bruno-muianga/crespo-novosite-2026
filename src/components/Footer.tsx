@@ -14,7 +14,7 @@ const Footer = () => (
             <p className="font-body text-[9px] sm:text-[10px] text-background/40 leading-relaxed">Av. Josina Machel esq. c/ Av. Karl Marx, junto ao ginásio IR Fitness</p>
           </div>
           <div>
-            <h4 className="font-body font-bold text-background text-xs sm:text-sm mb-1">Matola</h4>
+            <h4 className="font-body font-bold text-background text-xs sm:text-sm mb-1">Matola (Sede)</h4>
             <a href="https://wa.me/258853710487" className="font-body text-[10px] sm:text-xs text-background/60 hover:text-background block mb-1">+258 85 371 0487</a>
             <p className="font-body text-[9px] sm:text-[10px] text-background/40 leading-relaxed">EN4, Ceres, semáforos da Shoprite — Centro Comercial, 1° Andar nr 9</p>
           </div>

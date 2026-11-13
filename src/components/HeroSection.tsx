@@ -142,7 +142,7 @@ const Hero = () => {
             </span>
             <span className="text-brand-gold/40">•</span>
             <span className="flex items-center gap-1.5 font-medium hover:text-brand-gold transition-colors">
-              <MapPin className="w-3.5 h-3.5 text-brand-gold" /> Matola
+              <MapPin className="w-3.5 h-3.5 text-brand-gold" /> Matola (Sede)
             </span>
           </div>
         </div>
