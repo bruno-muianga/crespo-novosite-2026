@@ -26,25 +26,28 @@ const depoimentos = [
 
 const DepoimentosSection = () => {
   return (
-    <section id="depoimentos" className="relative py-16 sm:py-24 md:py-28 bg-card/40 border-t border-border/50 overflow-hidden scroll-mt-16">
+    <section id="depoimentos" className="relative py-20 sm:py-28 bg-card/30 border-t border-border/50 overflow-hidden scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 fade-in-section">
-        <div className="text-center mb-10 sm:mb-16">
-          <span className="inline-block font-body text-xs sm:text-sm font-bold tracking-widest text-brand-gold uppercase mb-2 sm:mb-3">
+        {/* Header */}
+        <div className="text-center mb-12 sm:mb-16">
+          <span className="inline-block font-body text-[11px] sm:text-xs font-bold tracking-[0.2em] text-brand-gold uppercase mb-3">
             Casos Reais & Transformações
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 sm:mb-4">
-            Transformações Reais
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3">
+            Resultados que Falam por Si
           </h2>
-          <p className="font-body text-sm sm:text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Cada cabelo conta uma história de cuidado, respeito à textura natural e amor próprio.
+          <div className="w-12 h-0.5 bg-brand-gold/60 mx-auto mb-4" />
+          <p className="font-body text-sm sm:text-base text-muted-foreground max-w-lg mx-auto leading-relaxed">
+            Cada cabelo conta uma história de recuperação, respeito à textura natural e reconquista da autoestima.
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Minimalist Cards Grid */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-14">
           {depoimentos.map((d, i) => (
             <div
               key={i}
-              className="group relative rounded-2xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 flex flex-col"
+              className="group relative rounded-2xl overflow-hidden border border-border/70 bg-card shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col"
             >
               <div className="relative aspect-[3/4] overflow-hidden bg-muted">
                 <img
@@ -53,13 +56,13 @@ const DepoimentosSection = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
-                <div className="absolute top-3 left-3 bg-brand-black/70 backdrop-blur-md text-brand-gold border border-brand-gold/30 text-[11px] font-body font-bold px-3 py-1 rounded-full">
+                <div className="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-md text-brand-gold border border-brand-gold/30 text-[10px] sm:text-[11px] font-body font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   {d.tag}
                 </div>
               </div>
-              <div className="p-5 flex-1 flex flex-col justify-between bg-card">
+              <div className="p-6 flex-1 flex flex-col justify-between bg-card">
                 <div>
-                  <h3 className="font-display text-lg font-bold text-foreground mb-1">
+                  <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-2">
                     {d.title}
                   </h3>
                   <p className="font-body text-xs sm:text-sm text-muted-foreground leading-relaxed">
@@ -71,16 +74,16 @@ const DepoimentosSection = () => {
           ))}
         </div>
 
-        {/* WhatsApp Consultation Callout */}
-        <div className="mt-12 sm:mt-16 text-center">
+        {/* CTA */}
+        <div className="text-center">
           <a
             href="https://wa.me/258853710487?text=Olá!%20Gostaria%20de%20marcar%20uma%20avaliação%20para%20o%20meu%20cabelo%20no%20Crespo%20Cresce"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 bg-brand-green text-primary-foreground px-7 sm:px-9 py-3.5 sm:py-4 rounded-full font-body font-bold text-sm sm:text-base hover:brightness-110 shadow-lg transition-all hover:scale-105"
+            className="inline-flex items-center gap-2.5 bg-brand-green hover:brightness-110 text-white px-8 py-3.5 sm:py-4 rounded-full font-body font-semibold text-xs sm:text-sm shadow-lg transition-all active:scale-95"
           >
-            <WhatsAppIcon className="w-5 h-5" />
-            Marcar Avaliação para o Meu Cabelo
+            <WhatsAppIcon className="w-4 h-4 flex-shrink-0" />
+            Quero Uma Transformação no Meu Cabelo (WhatsApp)
           </a>
         </div>
       </div>

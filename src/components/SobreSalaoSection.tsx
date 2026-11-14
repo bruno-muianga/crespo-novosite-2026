@@ -1,24 +1,28 @@
-import { Leaf, Microscope, Sparkles, HeartHandshake, CheckCircle2 } from "lucide-react";
+import { Leaf, Microscope, Sparkles, HeartHandshake, CheckCircle2, MapPin } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 const pilares = [
   {
-    icon: <Microscope className="w-6 h-6 text-brand-gold" />,
+    icon: <Microscope className="w-5 h-5 text-brand-gold" />,
+    number: "01",
     title: "Diagnóstico Capilar com Ciência",
     desc: "Exame minucioso de tricoscopia para entender a saúde do couro cabeludo e indicar o protocolo exato para o seu fio.",
   },
   {
-    icon: <Leaf className="w-6 h-6 text-brand-gold" />,
+    icon: <Leaf className="w-5 h-5 text-brand-gold" />,
+    number: "02",
     title: "Tratamentos & Recuperação Real",
     desc: "Fórmulas naturais e técnicas avançadas para crescimento acelerado, combate à queda, fortalecimento da fibra e controle de caspa.",
   },
   {
-    icon: <Sparkles className="w-6 h-6 text-brand-gold" />,
+    icon: <Sparkles className="w-5 h-5 text-brand-gold" />,
+    number: "03",
     title: "Tranças e Estilos Protetores",
     desc: "Penteados e tranças que respeitam os limites da tração capilar, protegendo a sua raiz e promovendo retenção de comprimento.",
   },
   {
-    icon: <HeartHandshake className="w-6 h-6 text-brand-gold" />,
+    icon: <HeartHandshake className="w-5 h-5 text-brand-gold" />,
+    number: "04",
     title: "Acompanhamento & Autoestima",
     desc: "Um espaço seguro e acolhedor onde ensinamos a cuidar do cabelo crespo no dia a dia com amor, respeito e orgulho.",
   },
@@ -31,118 +35,125 @@ const SobreSalaoSection = () => {
   return (
     <section
       id="sobre-salao"
-      className="relative py-16 sm:py-24 md:py-28 bg-background overflow-hidden scroll-mt-16"
+      className="relative py-20 sm:py-28 bg-background overflow-hidden scroll-mt-16"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 fade-in-section">
         {/* Cabeçalho da Secção */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <span className="inline-block font-body text-xs sm:text-sm font-bold tracking-widest text-brand-green uppercase mb-2 sm:mb-3">
+        <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-20">
+          <span className="inline-block font-body text-[11px] sm:text-xs font-bold tracking-[0.2em] text-brand-green uppercase mb-3">
             O Nosso Espaço · A Nossa Missão
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight">
             Sobre o Salão Crespo Cresce
           </h2>
-          <p className="font-body text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-            Muito mais do que um salão de beleza convencional, o <strong>Crespo Cresce</strong> é um{" "}
-            <strong>Centro Especializado em Terapia Capilar</strong> dedicado a transformar a relação de cada pessoa com o seu cabelo natural.
+          <div className="w-12 h-0.5 bg-brand-gold/60 mx-auto mb-5" />
+          <p className="font-body text-sm sm:text-base text-muted-foreground leading-relaxed">
+            Muito mais do que um salão de beleza convencional, somos um <strong>Centro Especializado em Terapia Capilar</strong> dedicado à saúde e valorização genuína do cabelo crespo e natural.
           </p>
         </div>
 
-        {/* Bloco de Contexto com Destaque */}
-        <div className="bg-card rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-border shadow-sm mb-12 sm:mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        {/* Bloco Editorial Moderno */}
+        <div className="bg-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-border/80 shadow-sm mb-16 sm:mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-7 space-y-4 text-foreground/90 font-body text-sm sm:text-base leading-relaxed">
-              <p>
-                Acreditamos que o <strong>cabelo crespo é rico em identidade, beleza e força</strong> — e necessita de cuidados pensados exclusivamente para a sua fisiologia.
+              <p className="text-base sm:text-lg font-medium text-foreground">
+                O cabelo crespo é rico em identidade, ancestralidade e força — e necessita de cuidados pensados especificamente para a sua estrutura única.
               </p>
-              <p className="text-muted-foreground">
-                Combinamos o rigor da <strong>terapia capilar e tricologia</strong> com o poder de ingredientes naturais para tratar problemas reais: fios fragilizados, quebra, lentidão no crescimento, queda excessiva e irritações no couro cabeludo.
+              <p className="text-muted-foreground leading-relaxed">
+                Aliamos a ciência da <strong>terapia capilar e tricologia</strong> ao poder de ativos naturais nobres para tratar a raiz do problema: quebra contínua, estagnação no crescimento, queda excessiva e desequilíbrios do couro cabeludo.
               </p>
-              <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm font-medium text-foreground">
+              <div className="pt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm font-medium text-foreground">
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
-                  Atendimento personalizado individual
+                  Atendimento individualizado
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
-                  Produtos naturais selecionados
+                  Cosmética natural pura
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
-                  Especialistas em couro cabeludo
+                  Terapeutas capilares certificados
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
-                  Acompanhamento para crianças e adultos
+                  Cuidado para crianças e adultos
                 </span>
               </div>
             </div>
 
             {/* Destaque das 3 Unidades */}
-            <div className="lg:col-span-5 bg-brand-green/5 border border-brand-green/20 rounded-2xl p-6 text-center lg:text-left">
-              <span className="text-[11px] font-body font-bold text-brand-gold uppercase tracking-wider block mb-1">
-                Conveniência & Proximidade
+            <div className="lg:col-span-5 bg-gradient-to-br from-brand-green/5 via-card to-brand-gold/5 border border-brand-green/20 rounded-2xl p-6 sm:p-7 shadow-sm">
+              <span className="text-[10px] sm:text-[11px] font-body font-bold text-brand-gold uppercase tracking-[0.2em] block mb-1">
+                Conveniência & Acesso
               </span>
-              <h4 className="font-display text-xl font-bold text-foreground mb-2">
+              <h4 className="font-display text-xl sm:text-2xl font-bold text-foreground mb-4">
                 3 Salões em Moçambique
               </h4>
-              <p className="font-body text-xs text-muted-foreground mb-4 leading-relaxed">
-                Estamos prontos para acolhê-la em espaços modernos, higienizados e equipados:
-              </p>
-              <ul className="space-y-2 text-xs sm:text-sm font-body text-foreground/90 font-medium">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0" />
-                  <strong>Sommershield:</strong> Edifício Kosmoz
+              <ul className="space-y-3 text-xs sm:text-sm font-body text-foreground/90">
+                <li className="flex items-start gap-2.5 p-2 rounded-xl bg-card/60 border border-border/50">
+                  <MapPin className="w-4 h-4 text-brand-gold flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-foreground">Matola (Sede)</span>
+                    <p className="text-[11px] text-muted-foreground">EN4, Ceres, semáforos Shoprite em frente à Construa</p>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0" />
-                  <strong>Maputo Cidade:</strong> Av. Josina Machel
+                <li className="flex items-start gap-2.5 p-2 rounded-xl bg-card/60 border border-border/50">
+                  <MapPin className="w-4 h-4 text-brand-green flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-foreground">Maputo Cidade</span>
+                    <p className="text-[11px] text-muted-foreground">Av. Josina Machel c/ Av. Karl Marx (junto ao IR Fitness)</p>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0" />
-                  <strong>Matola (Sede):</strong> EN4, Ceres (Shoprite)
+                <li className="flex items-start gap-2.5 p-2 rounded-xl bg-card/60 border border-border/50">
+                  <MapPin className="w-4 h-4 text-brand-green flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-foreground">Sommershield</span>
+                    <p className="text-[11px] text-muted-foreground">Edifício Kosmoz — Av. Elias Lucas Kumato</p>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Grelha de Pilares do Salão */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
+        {/* Grelha Minimalista de Pilares */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-14">
           {pilares.map((p) => (
             <div
               key={p.title}
-              className="bg-card rounded-2xl p-6 border border-border shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+              className="group bg-card rounded-2xl p-6 border border-border/70 shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 hover:-translate-y-1 relative flex flex-col justify-between"
             >
-              <div className="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/25 flex items-center justify-center mb-4">
-                {p.icon}
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-brand-gold/10 border border-brand-gold/25 flex items-center justify-center transition-transform group-hover:scale-105">
+                    {p.icon}
+                  </div>
+                  <span className="font-display font-bold text-lg text-muted-foreground/30">
+                    {p.number}
+                  </span>
+                </div>
+                <h3 className="font-display text-base sm:text-lg font-bold text-foreground mb-2 leading-snug">
+                  {p.title}
+                </h3>
+                <p className="font-body text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  {p.desc}
+                </p>
               </div>
-              <h3 className="font-display text-base sm:text-lg font-bold text-foreground mb-2">
-                {p.title}
-              </h3>
-              <p className="font-body text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                {p.desc}
-              </p>
             </div>
           ))}
         </div>
 
-        {/* Ações no rodapé da secção */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-center">
+        {/* CTA Minimalista para Agendamento */}
+        <div className="text-center">
           <a
             href={whatsappMatola}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-green text-primary-foreground px-7 sm:px-9 py-3.5 sm:py-4 rounded-full font-body font-bold text-sm sm:text-base hover:brightness-110 shadow-lg transition-all active:scale-95"
+            className="inline-flex items-center gap-2.5 bg-brand-green hover:brightness-110 text-white px-8 py-3.5 sm:py-4 rounded-full font-body font-semibold text-xs sm:text-sm shadow-lg transition-all active:scale-95"
           >
-            <WhatsAppIcon className="w-5 h-5 flex-shrink-0" />
-            Agendar no WhatsApp (Matola: 853710487)
-          </a>
-          <a
-            href="#depoimentos"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-body font-semibold text-foreground border border-border hover:bg-muted transition-colors text-sm"
-          >
-            Ver Casos Reais de Clientes ↓
+            <WhatsAppIcon className="w-4 h-4 flex-shrink-0" />
+            Agendar Consulta no WhatsApp (Matola: 853710487)
           </a>
         </div>
       </div>
@@ -151,4 +162,3 @@ const SobreSalaoSection = () => {
 };
 
 export default SobreSalaoSection;
-
